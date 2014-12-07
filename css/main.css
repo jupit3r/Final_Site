@@ -21,9 +21,9 @@ body {
   margin: 0 auto;
 }
 h2 {
-  display: inline-block;
   width: auto;
   margin: 60px;
+  display: inline-block;
   font-size: 26px;
   border-bottom: 2px solid #4646b4;
 }
@@ -34,9 +34,9 @@ ul li {
   list-style-type: none;
 }
 section {
+  clear: both;
   width: 100%;
   margin: 0 auto;
-  clear: both;
 }
 .gridSystem {
   margin: 0 auto;
@@ -44,9 +44,9 @@ section {
 /* ----------- HEADER ---------- */
 h1 {
   float: left;
-  color: #4646b4;
   padding: 10px 10%;
   font-size: 22px;
+  color: #4646b4;
 }
 h1 span {
   color: #4c4c4b;
@@ -56,9 +56,9 @@ h1 span {
   padding-top: 10px;
 }
 #mainNav ul li {
+  padding: 5px 10px;
   display: inline-block;
   list-style-type: none;
-  padding: 5px 10px;
 }
 #mainNav ul li a {
   font-size: 12px;
@@ -72,9 +72,9 @@ h4 {
 }
 img {
   float: left;
-  display: inline-block;
-  margin: 5px;
   width: auto;
+  margin: 5px;
+  display: inline-block;
 }
 .active {
   width: auto;
@@ -85,9 +85,9 @@ img {
 #intro {
   margin: 0 auto;
   width: 100%;
-  background: url('../images/Background_1.jpg');
   height: 500px;
   overflow: hidden;
+  background: url('../images/Background_1.jpg');
 }
 #intro ul {
   padding-top: 15%;
@@ -96,14 +96,14 @@ img {
   padding: 5px;
 }
 #intro ul h2 {
-  display: inline-block;
   width: auto;
-  color: #fff;
-  padding: 5px;
   margin: 0 auto;
+  padding: 5px;
+  border: none;
+  display: inline-block;
+  color: #fff;
   font-size: 26px;
   font-weight: 200;
-  border: none;
   background: rgba(0, 0, 0, 0.4);
 }
 #UIBrush {
@@ -122,39 +122,38 @@ img {
 }
 #UIBrush .breaker {
   margin: 0 auto;
-  background-color: #4646b4;
   height: 100px;
+  background-color: #4646b4;
 }
 #UIBrush .breaker p {
   width: 80%;
+  margin: 0 auto;
+  padding-top: 2% 0 5%;
   font-size: 20px;
   color: #fff;
-  padding-top: 2%;
-  margin: 0 auto;
-  padding-bottom: 5%;
 }
 #UIBrush .breaker p span {
+  text-transform: uppercase;
   border-bottom: 1px solid white;
   font-size: 24px;
   color: #fff;
-  text-transform: uppercase;
 }
 .fa {
+  padding: 40px 0 25px 0;
   font-size: 30px;
   font-size: 300;
-  padding: 40px 0 25px 0;
   color: #4646b4;
 }
 h5 {
+  margin: 0 auto;
+  padding: 0 0 25px;
   font-size: 20px;
   font-weight: 400;
-  padding: 0 0 25px;
-  margin: 0 auto;
 }
 #recents {
-  height: 550px;
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
+  height: 550px;
 }
 #recents .gridSystem {
   padding: 50px;
@@ -180,12 +179,12 @@ h5 {
   padding-bottom: 5px;
 }
 #recents .gridSystem ul li span {
-  font-size: 16px;
   padding: 5px;
+  font-size: 16px;
 }
 #recents p {
-  margin: 0 auto;
   width: 60%;
+  margin: 0 auto;
   padding-bottom: 35px;
 }
 /* ----------- PAGE INTROS ---------- */
@@ -196,17 +195,17 @@ h5 {
 }
 #aboutIntro h3,
 #portIntro h3 {
-  color: #fff;
   padding-top: 5%;
   font-size: 60px;
   font-weight: 300;
+  color: #fff;
 }
 #aboutIntro p,
 #portIntro p {
   width: 80%;
   margin: 0 auto;
-  color: #fff;
   padding-bottom: 5%;
+  color: #fff;
 }
 /* ----------- ABOUT PAGE ---------- */
 #aboutIntro {
@@ -261,8 +260,8 @@ h5 {
 }
 #Portfolio {
   width: 100%;
-  margin: 0 auto;
   height: 300px;
+  margin: 0 auto;
 }
 #Portfolio nav {
   width: 100%;
@@ -276,8 +275,8 @@ h5 {
   margin: 0;
 }
 #Projects nav ul li {
-  display: inline-block;
   padding: 5px 10px;
+  display: inline-block;
 }
 #Projects nav ul li a {
   list-style-type: none;
@@ -285,9 +284,9 @@ h5 {
   color: #000;
 }
 #Projects nav ul li a.activate {
-  background-color: #eaeaea;
   padding: 5px 10px;
   border: 1px solid #cac6c6;
+  background-color: #eaeaea;
 }
 #Projects {
   width: 100%;
@@ -322,19 +321,23 @@ h5 {
 }
 /* ----------- FOOTER ---------- */
 footer {
-  margin: 0 auto;
-  height: 55px;
   clear: both;
+  height: 55px;
+  margin: 0 auto;
   background-color: #4646b4;
 }
 footer p {
-  color: #fff;
   padding: 20px;
+  color: #fff;
 }
+/* ----------- MEDIA QUERIES ---------- */
+/* -------------- TABLET -------------- */
 @media (max-width: 940px) {
+  /* ----------- CONTAINER ---------- */
   .container {
     width: 940px;
   }
+  /* ----------- MAIN NAV ---------- */
   #mainNav {
     padding-left: 35%;
     padding-top: 5px;
@@ -342,12 +345,13 @@ footer p {
   #mainNav ul li {
     padding: 2px 5px;
   }
+  /* ----------- MISSION ---------- */
   #mission {
     width: 100%;
   }
   #mission ul {
-    margin: 0 auto;
     width: 100%;
+    margin: 0 auto;
     display: inline;
     float: left;
     width: 49.140893470790374%;
@@ -358,22 +362,21 @@ footer p {
     padding-top: 100px;
   }
 }
+/* ----------- LANSCAPE PHONE / TABLET ---------- */
 @media (max-width: 767px) {
+  /* ----------- CONTAINER ---------- */
   .container {
     width: 767px;
   }
-  #UIBrush .gridSystem ul {
-    display: inline;
-    float: left;
-    width: 49.140893470790374%;
-    margin: 0 0.429553264604811%;
-  }
+  /* ----------- UIBRUSH ---------- */
+  #UIBrush .gridSystem ul,
   #recents .gridSystem ul {
     display: inline;
     float: left;
     width: 49.140893470790374%;
     margin: 0 0.429553264604811%;
   }
+  /* ----------- ABOUT ---------- */
   #about {
     height: 350px;
   }
@@ -408,6 +411,7 @@ footer p {
   }
 }
 @media (max-width: 480px) {
+  /* ----------- CONTAINER ---------- */
   .container {
     width: 480px;
   }
@@ -490,6 +494,7 @@ footer p {
   }
 }
 @media (max-width: 320px) {
+  /* ----------- CONTAINER ---------- */
   .container {
     width: 320px;
   }

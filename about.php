@@ -3,18 +3,26 @@
 	$page_title = "About Us";
 	include "inc/header.php"; 
 ?>
-	<div class="about">
+
+	<!--          ABOUT INTRO           -->
+
 		<section id="aboutIntro">
 			<h3>Who <span>We Are</span></h3>
 			<p>Pie macaroon gummies cupcake. Gingerbread chocolate sugar plum danish. Jelly beans bear claw oat cake donut bonbon cupcake bear claw carrot cake. Biscuit sweet roll jujubes topping carrot cake cotton candy. Tiramisu tootsie roll pie. Jujubes sweet roll sugar plum powder. Gingerbread tart jelly beans chocolate cheesecake icing.</p>
-		</section>
+		</section><!--/#aboutIntro-->
+
+
+	<!--          ABOUT           -->
 
 		<section id="about">
 			<h2>About Us</h2>
 			<p>
 				Pie macaroon gummies cupcake. Gingerbread chocolate sugar plum danish. Jelly beans bear claw oat cake donut bonbon cupcake bear claw carrot cake. Biscuit sweet roll jujubes topping carrot cake cotton candy. Tiramisu tootsie roll pie. Jujubes sweet roll sugar plum powder. Gingerbread tart jelly beans chocolate cheesecake icing.Gingerbread chocolate sugar plum danish. Jelly beans bear claw oat cake donut bonbon cupcake bear claw carrot cake. Biscuit sweet roll jujubes topping carrot cake cotton candy. Macaroon sweet marshmallow candy topping tart. Gingerbread unerdwear.com caramels pie.
 			</p>
-		</section>
+		</section><!--/#about-->
+
+
+	<!--          OURTEAM           -->
 
 		<section id="ourTeam">
 			<h2>Our Team</h2>
@@ -46,8 +54,11 @@
 				<li>CEO</li>
 				<li><p>Marzipan biscuit sugar plum. Macaroon sweet marshmallow candy topping tart. Gingerbread unerdwear.com caramels pie.</p></li>
 			</ul>
-		 </div>
-		</section>
+		 </div><!--/.gridSystem-->
+		</section><!--/#ourTeam-->
+
+
+	<!--          MISSION           -->
 
 		<section id="mission">
 			<ul>
@@ -60,7 +71,6 @@
 			<ul>
 				<li><img src="images/Puppies.jpg"></li>
 			</ul>
-		</section>
-	</div>
+		</section><!--/#mission-->
 
 <?php include "inc/	footer.php"; ?>

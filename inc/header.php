@@ -14,16 +14,20 @@
 
 <body>
 
+	<!--         CONTAINTER           -->
+
 	<div class="container">
+
+	<!--          HEADER           -->
 		<header>
 				<h1>UI<span>Brush</span></h1>
 				<nav id="mainNav">
-					<ul class="dropdown">
+					<ul>
 						<li <?php if($page == "home"){echo 'class="active"';}?>><a href="index.php">Home</a></li>
 						<li <?php if($page == "about"){echo 'class="active"';}?>><a href="about.php">About Us</a></li>
 						<li><a href="#">Services</a></li>
 						<li <?php if($page == "portfolio"){echo 'class="active"';}?>><a href="portfolio.php">Portfolio</a></li>
 						<li><a href="#">Contact Us</a></li>
 					</ul>
-				</nav>
+				</nav><!--/#mainNav-->
 		</header>

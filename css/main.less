@@ -33,7 +33,6 @@ html {
 
 /* ----------- GLOBAL ---------- */
 
-
 body {
   margin: 0 auto;
   text-align: center;
@@ -47,9 +46,9 @@ body {
 }
 
 h2 {
-  display: inline-block;
   width: auto;
   margin: 60px;
+  display: inline-block;
   font-size: 26px;
   border-bottom: 2px solid @mainColor;
 }
@@ -63,9 +62,9 @@ ul li {
 }
 
 section{
+  clear: both; 
   width: 100%;
   margin: 0 auto;
-  clear: both;
 }
 
 .gridSystem {
@@ -77,9 +76,9 @@ section{
 
 h1{
   float: left;
-  color: @mainColor;
   padding: 10px 10%;
-  font-size: 22px;
+  font-size: 22px;  
+  color: @mainColor;
   span{
     color: #4c4c4b;
   }
@@ -89,9 +88,9 @@ h1{
   padding-left: 55%;
   padding-top: 10px;
   ul li {
+    padding: 5px 10px;    
     display: inline-block;
     list-style-type: none;
-    padding: 5px 10px;
     a {
       font-size: 12px;
       font-weight: 700;
@@ -108,9 +107,9 @@ h4 {
 
 img {
   float: left;
-  display: inline-block;
-  margin: 5px;
   width: auto;
+  margin: 5px;
+  display: inline-block;
 }
 
 .active {
@@ -124,23 +123,23 @@ img {
 #intro{
   margin: 0 auto;
   width: 100%;
-  background: url('../images/Background_1.jpg');
   height: 500px;
   overflow: hidden;
+  background: url('../images/Background_1.jpg');
   ul{
     padding-top: 15%;
     li{
       padding: 5px;
     }
     h2{
-      display: inline-block;
       width: auto;
-      color: #fff;
-      padding: 5px;
       margin: 0 auto;
+      padding: 5px;
+      border: none;
+      display: inline-block;
+      color: #fff;
       font-size: 26px;
       font-weight: 200;
-      border: none;
       background: rgba(0, 0, 0, .4);      
     }
   }
@@ -160,43 +159,42 @@ img {
   }
   .breaker {
     margin: 0 auto;
+    height: 100px;    
     background-color: @mainColor;
-    height: 100px;
     p{
       width: 80%;
+      margin: 0 auto;
+      padding-top: 2% 0 5%;
       font-size: 20px;
       color: #fff;
-      padding-top: 2%;    
-      margin: 0 auto;
-      padding-bottom: 5%;
       span{
+        text-transform: uppercase;
         border-bottom: 1px solid white;
         font-size: 24px;
         color: #fff;
-        text-transform: uppercase;
       }
     }
   }
 }
 
 .fa {
+  padding: 40px 0 25px 0;  
   font-size: 30px;
   font-size: 300;
-  padding: 40px 0 25px 0;
   color: @mainColor;
 }
 
 h5{
+  margin: 0 auto;
+  padding: 0 0 25px;  
   font-size: 20px;
   font-weight: 400;
-  padding: 0 0 25px;
-  margin: 0 auto;
 }
 
 #recents{
-  height: 550px;
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
+  height: 550px;
   .gridSystem{
     padding: 50px;
     ul{
@@ -205,18 +203,18 @@ h5{
       background-color: #eeeeee;
       border: 1px solid #e0dddd;
       li{
-          width: 100%;
-          padding-bottom: 5px;
-          text-align: right;
-          border-bottom: 1px solid #d5d4d3;
+        width: 100%;
+        padding-bottom: 5px;
+        text-align: right;
+        border-bottom: 1px solid #d5d4d3;
         img{
           width: 100%;
           margin: 0 auto;
           padding-bottom: 5px;
         }    
         span{
+          padding: 5px;          
           font-size: 16px;
-          padding: 5px;
         }
       }
     }
@@ -224,8 +222,8 @@ h5{
 }
 
 #recents p {
-  margin: 0 auto;
   width: 60%;
+  margin: 0 auto;
   padding-bottom: 35px;
 }
 
@@ -237,16 +235,16 @@ h5{
     height: 450px;
     overflow: hidden;
   h3{
-    color: #fff;
     padding-top: 5%;
     font-size: 60px;
     font-weight: 300;
+    color: #fff;
   }
   p {
     width: 80%;
     margin: 0 auto;
-    color: #fff;
     padding-bottom: 5%;
+    color: #fff;
   }
 }
 
@@ -299,7 +297,6 @@ h5{
 }
 
 
-
 /* ----------- PORTFOLIO PAGE ---------- */
 
 #portIntro{
@@ -308,8 +305,8 @@ h5{
 
 #Portfolio{
   width: 100%;
+  height: 300px;  
   margin: 0 auto;
-  height: 300px;
   nav{
     width: 100%;
   }
@@ -323,17 +320,17 @@ h5{
 #Projects nav{
 margin: 0;
   ul li{
+    padding: 5px 10px;    
     display: inline-block;
-    padding: 5px 10px;
     a{
       list-style-type: none;
       text-decoration: none; 
       color: #000;    
     }
     a.activate{
-      background-color:#eaeaea;
       padding: 5px 10px;
-      border: 1px solid #cac6c6;
+      border: 1px solid #cac6c6;      
+      background-color:#eaeaea;
     }
   }
 }
@@ -354,8 +351,8 @@ margin: 0;
         margin: 0 auto;
         width: 100%;
         z-index: 0;
+        }
       }
-    }
       &:hover{
         background-image: url("../images/Icon.png");
         background-size: cover;
@@ -363,35 +360,37 @@ margin: 0;
         background: rgba(0, 0, 0, 0.5);
         z-index: 5;         
       }
-      
     }      
   }
 }
 
 
-
 /* ----------- FOOTER ---------- */
 
 footer {
-  margin: 0 auto;
-  height: 55px;
   clear: both;
+  height: 55px;
+  margin: 0 auto;
   background-color: @mainColor;
   p{
-    color: #fff;
     padding: 20px;
+    color: #fff;
   }
 }
 
 
-// MEDIA QUERIES 
-//----------------------------
-// Tablet
+
+/* ----------- MEDIA QUERIES ---------- */
+/* -------------- TABLET -------------- */
+
 @media (max-width: 940px){
 
+  /* ----------- CONTAINER ---------- */
   .container {
     width: 940px;
   }
+
+  /* ----------- MAIN NAV ---------- */
 
   #mainNav{
     padding-left: 35%;
@@ -402,11 +401,12 @@ footer {
     }
   } 
 
+  /* ----------- MISSION ---------- */
   #mission {
     width: 100%;
     ul{
-      margin: 0 auto;
       width: 100%;
+      margin: 0 auto;
       .column(6);
       img{
         width: 98%;
@@ -416,13 +416,20 @@ footer {
   }
 }
 
-// Landscape Phone To Portrait Tablet --------
+
+/* ----------- LANSCAPE PHONE / TABLET ---------- */
 @media (max-width: 767px){
+
+  /* ----------- CONTAINER ---------- */
+
   .container {
     width: 767px;
   }
 
-  #UIBrush {
+  /* ----------- UIBRUSH ---------- */
+
+  #UIBrush,
+  #recents {
     .gridSystem{
       ul{
         .column(6);
@@ -430,13 +437,15 @@ footer {
     }
   }
 
-  #recents{
-    .gridSystem{
-      ul{
-        .column(6);
-      }
-    }
-  }
+  // #recents{
+  //   .gridSystem{
+  //     ul{
+  //       .column(6);
+  //     }
+  //   }
+  // }
+
+  /* ----------- ABOUT ---------- */
 
   #about{
     height: 350px;
@@ -473,6 +482,9 @@ footer {
 
 // Landscape phones and down
 @media (max-width: 480px){
+
+  /* ----------- CONTAINER ---------- */
+
   .container {
     width: 480px;
   }
@@ -599,6 +611,9 @@ footer {
 
 // Portrait phone down
 @media (max-width: 320px) {
+
+  /* ----------- CONTAINER ---------- */
+
   .container{
     width: 320px;
   }

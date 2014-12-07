@@ -1,0 +1,609 @@
+/* ----------- VARIABLES ---------- */
+
+@mainColor: #4646b4;
+
+
+/* ----------- GRID SYSTEM ----------- */
+
+@column-width: 87;
+@gutter-width: 10;
+@columns: 12;
+
+@gridsystem-width: (@column-width * @columns) + (@gutter-width * @columns) * 1px;
+@total-width: 100%;
+
+.column(@x,@columns:@columns) {
+  display: inline;
+  float: left;
+  width: @total-width*((((@gutter-width+@column-width)*@x)-@gutter-width) / @gridsystem-width);
+  margin: 0 @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+
+
+/* ----------- BOX RESIZING ---------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* ----------- GLOBAL ---------- */
+
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 1346px;
+  margin: 0 auto;
+}
+
+h2 {
+  display: inline-block;
+  width: auto;
+  margin: 60px;
+  font-size: 26px;
+  border-bottom: 2px solid @mainColor;
+}
+
+span {
+  color: @mainColor;    
+}
+
+ul li {
+  list-style-type: none;
+}
+
+section{
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+}
+
+.gridSystem {
+  margin: 0 auto;
+}
+
+
+/* ----------- HEADER ---------- */
+
+h1{
+  float: left;
+  color: @mainColor;
+  padding: 10px 10%;
+  font-size: 22px;
+  span{
+    color: #4c4c4b;
+  }
+}
+
+#mainNav{
+  padding-left: 55%;
+  padding-top: 10px;
+  ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px 10px;
+    a {
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
+
+h4 {
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+img {
+  float: left;
+  display: inline-block;
+  margin: 5px;
+  width: auto;
+}
+
+.active {
+  width: auto;
+  display: inline-block;
+  border-bottom: 3px solid @mainColor;
+}
+
+/* ----------- HOME PAGE ---------- */
+
+#intro{
+  margin: 0 auto;
+  width: 100%;
+  background: url('../images/Background_1.jpg');
+  height: 500px;
+  overflow: hidden;
+  ul{
+    padding-top: 15%;
+    li{
+      padding: 5px;
+    }
+    h2{
+      display: inline-block;
+      width: auto;
+      color: #fff;
+      padding: 5px;
+      margin: 0 auto;
+      font-size: 26px;
+      font-weight: 200;
+      border: none;
+      background: rgba(0, 0, 0, .4);      
+    }
+  }
+}
+
+#UIBrush {
+  height: 425px;
+  .gridSystem{
+    ul{
+      .column(3);
+    }
+  }
+  p{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  .breaker {
+    margin: 0 auto;
+    background-color: @mainColor;
+    height: 100px;
+    p{
+      width: 80%;
+      font-size: 20px;
+      color: #fff;
+      padding-top: 2%;    
+      margin: 0 auto;
+      padding-bottom: 5%;
+      span{
+        border-bottom: 1px solid white;
+        font-size: 24px;
+        color: #fff;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.fa {
+  font-size: 30px;
+  font-size: 300;
+  padding: 40px 0 25px 0;
+  color: @mainColor;
+}
+
+h5{
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 0 25px;
+  margin: 0 auto;
+}
+
+#recents{
+  height: 550px;
+  margin: 0 auto;
+  width: 100%;
+  .gridSystem{
+    padding: 50px;
+    ul{
+      .column(3);
+      padding: 0;
+      background-color: #eeeeee;
+      border: 1px solid #e0dddd;
+      li{
+          width: 100%;
+          padding-bottom: 5px;
+          text-align: right;
+          border-bottom: 1px solid #d5d4d3;
+        img{
+          width: 100%;
+          margin: 0 auto;
+          padding-bottom: 5px;
+        }    
+        span{
+          font-size: 16px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+#recents p {
+  margin: 0 auto;
+  width: 60%;
+  padding-bottom: 35px;
+}
+
+
+/* ----------- PAGE INTROS ---------- */
+
+#aboutIntro,
+#portIntro {
+    height: 450px;
+    overflow: hidden;
+  h3{
+    color: #fff;
+    padding-top: 5%;
+    font-size: 60px;
+    font-weight: 300;
+  }
+  p {
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    padding-bottom: 5%;
+  }
+}
+
+
+/* ----------- ABOUT PAGE ---------- */
+
+#aboutIntro{
+  background: url('../images/Background_2.jpg');
+}
+
+#about {
+  height: 290px;
+  p {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+  }
+}
+
+#ourTeam{
+  height: 600px;
+  background-color: #f6f6f6;
+  ul{
+    .column(3);
+    li{
+      padding-bottom: 10px;
+    }
+    img{
+    width: 85%;
+    border-radius: 50%;
+    }
+  }
+}
+
+#ourTeam p{
+  padding: 10px;
+}
+
+#mission {
+  height: 400px;
+  ul{
+    .column(6);
+    img{
+      padding-top: 10%;
+    }
+    h2{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+
+/* ----------- PORTFOLIO PAGE ---------- */
+
+#portIntro{
+  background: url('../images/Background_3.jpg');
+}
+
+#Portfolio{
+  width: 100%;
+  margin: 0 auto;
+  height: 300px;
+  nav{
+    width: 100%;
+  }
+  p{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 3%;
+  }
+}
+
+#Projects nav{
+margin: 0;
+  ul li{
+    display: inline-block;
+    padding: 5px 10px;
+    a{
+      list-style-type: none;
+      text-decoration: none; 
+      color: #000;    
+    }
+    a.activate{
+      background-color:#eaeaea;
+      padding: 5px 10px;
+      border: 1px solid #cac6c6;
+    }
+  }
+}
+
+#Projects{
+  width: 100%;
+  margin: 0 auto;
+  height: 800px;
+  .gridSystem{
+    z-index: 0;
+    li{
+      .column(3);
+      padding: 5px;
+      a{
+        display: block;
+        z-index: 0;
+      img{
+        margin: 0 auto;
+        width: 100%;
+        z-index: 0;
+      }
+    }
+      &:hover{
+        background-image: url("../images/Icon.png");
+        background-size: cover;
+        background-position: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 5;         
+      }
+      
+    }      
+  }
+}
+
+
+
+/* ----------- FOOTER ---------- */
+
+footer {
+  margin: 0 auto;
+  height: 55px;
+  clear: both;
+  background-color: @mainColor;
+  p{
+    color: #fff;
+    padding: 20px;
+  }
+}
+
+
+// MEDIA QUERIES 
+//----------------------------
+// Tablet
+@media (max-width: 940px){
+
+  .container {
+    width: 940px;
+  }
+
+  #mainNav{
+    padding-left: 35%;
+    padding-top: 5px;
+    ul li {
+      padding: 2px 5px;
+     
+    }
+  } 
+
+  #mission {
+    width: 100%;
+    ul{
+      margin: 0 auto;
+      width: 100%;
+      .column(6);
+      img{
+        width: 98%;
+        padding-top: 100px;
+      }
+    }
+  }
+}
+
+// Landscape Phone To Portrait Tablet --------
+@media (max-width: 767px){
+  .container {
+    width: 767px;
+  }
+
+  #UIBrush {
+    .gridSystem{
+      ul{
+        .column(6);
+      }
+    }
+  }
+
+  #recents{
+    .gridSystem{
+      ul{
+        .column(6);
+      }
+    }
+  }
+
+  #about{
+    height: 350px;
+  }
+
+  #ourTeam{
+    height: 1150px;
+    ul{
+      .column(6);
+    }
+  }
+
+  #mission {
+    ul{
+      .column(12);
+      img{
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px 35px 20px 10px;
+      }
+    }
+  }
+
+  #Projects{
+    height: 800px;
+    .gridSystem{
+     
+      li{
+        .column(6);
+      }      
+    }
+  }
+}
+
+// Landscape phones and down
+@media (max-width: 480px){
+  .container {
+    width: 480px;
+  }
+
+  #mainNav{
+
+    padding: 5px;
+    ul {
+      float: left;
+      padding:0;
+      width: 100%;
+    }
+
+    li {
+      a {
+        font-size: 12px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+
+  // #topBar {
+  //   height: auto;
+  //   .fa-bars {
+  //     display: block;
+  //     padding: 10px 15px;
+  //     color: @mainColor;
+  //     cursor: pointer;
+  //   }
+  // }
+
+  // #topBar ul.dropdown {
+  //   display: none;
+  //   text-align: left;
+  //     li {
+  //       display: block;
+  //       border-top: 1px solid white;
+  //     }
+  //     a {
+  //       color: white;
+  //       padding-left: 15px;
+
+  //       &:hover {
+  //         color: #444;
+  //       }
+      
+  //       &.open {
+  //         display: block;
+  //       }
+  //     }
+  //   }
+
+  #UIBrush .breaker {
+    height: 50px;
+    p{
+      font-size: 12px;
+      span{
+        font-size: 16px;
+      }
+    }
+  }
+
+  #UIBrush {
+    .gridSystem{
+      ul{
+        .column(12);
+        li{
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  #recents{
+    .gridSystem{
+      ul{
+        .column(12);
+        margin: 10px;
+      }
+    }
+  }
+
+  #about{
+    height: 450px;
+  }
+
+  #ourTeam{
+    height: 1250px;
+    ul{
+      .column(12);
+      img{
+        width: 50%;
+        padding-bottom: 10%;
+      }
+    }
+  }
+
+  #mission {
+    ul{
+      .column(12);
+    }
+  }
+
+  #Portfolio{
+    height: 450px;
+  }
+
+  #Projects nav{
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  #Projects{
+    height: 800px;
+    .gridSystem{
+      li{
+        .column(12);
+      }      
+    }
+  }
+}
+
+// Portrait phone down
+@media (max-width: 320px) {
+  .container{
+    width: 320px;
+  }
+}
+
+
+
+//     lvw/.     //

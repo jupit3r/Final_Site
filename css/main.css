@@ -1,0 +1,496 @@
+/* ----------- VARIABLES ---------- */
+/* ----------- GRID SYSTEM ----------- */
+/* ----------- BOX RESIZING ---------- */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* ----------- GLOBAL ---------- */
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+.container {
+  width: 1346px;
+  margin: 0 auto;
+}
+h2 {
+  display: inline-block;
+  width: auto;
+  margin: 60px;
+  font-size: 26px;
+  border-bottom: 2px solid #4646b4;
+}
+span {
+  color: #4646b4;
+}
+ul li {
+  list-style-type: none;
+}
+section {
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+}
+.gridSystem {
+  margin: 0 auto;
+}
+/* ----------- HEADER ---------- */
+h1 {
+  float: left;
+  color: #4646b4;
+  padding: 10px 10%;
+  font-size: 22px;
+}
+h1 span {
+  color: #4c4c4b;
+}
+#mainNav {
+  padding-left: 55%;
+  padding-top: 10px;
+}
+#mainNav ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 5px 10px;
+}
+#mainNav ul li a {
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+h4 {
+  margin: 0 auto;
+  font-size: 18px;
+}
+img {
+  float: left;
+  display: inline-block;
+  margin: 5px;
+  width: auto;
+}
+.active {
+  width: auto;
+  display: inline-block;
+  border-bottom: 3px solid #4646b4;
+}
+/* ----------- HOME PAGE ---------- */
+#intro {
+  margin: 0 auto;
+  width: 100%;
+  background: url('../images/Background_1.jpg');
+  height: 500px;
+  overflow: hidden;
+}
+#intro ul {
+  padding-top: 15%;
+}
+#intro ul li {
+  padding: 5px;
+}
+#intro ul h2 {
+  display: inline-block;
+  width: auto;
+  color: #fff;
+  padding: 5px;
+  margin: 0 auto;
+  font-size: 26px;
+  font-weight: 200;
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+}
+#UIBrush {
+  height: 425px;
+}
+#UIBrush .gridSystem ul {
+  display: inline;
+  float: left;
+  width: 24.140893470790378%;
+  margin: 0 0.429553264604811%;
+}
+#UIBrush p {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+}
+#UIBrush .breaker {
+  margin: 0 auto;
+  background-color: #4646b4;
+  height: 100px;
+}
+#UIBrush .breaker p {
+  width: 80%;
+  font-size: 20px;
+  color: #fff;
+  padding-top: 2%;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+#UIBrush .breaker p span {
+  border-bottom: 1px solid white;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.fa {
+  font-size: 30px;
+  font-size: 300;
+  padding: 40px 0 25px 0;
+  color: #4646b4;
+}
+h5 {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 0 25px;
+  margin: 0 auto;
+}
+#recents {
+  height: 550px;
+  margin: 0 auto;
+  width: 100%;
+}
+#recents .gridSystem {
+  padding: 50px;
+}
+#recents .gridSystem ul {
+  display: inline;
+  float: left;
+  width: 24.140893470790378%;
+  margin: 0 0.429553264604811%;
+  padding: 0;
+  background-color: #eeeeee;
+  border: 1px solid #e0dddd;
+}
+#recents .gridSystem ul li {
+  width: 100%;
+  padding-bottom: 5px;
+  text-align: right;
+  border-bottom: 1px solid #d5d4d3;
+}
+#recents .gridSystem ul li img {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+#recents .gridSystem ul li span {
+  font-size: 16px;
+  padding: 5px;
+}
+#recents p {
+  margin: 0 auto;
+  width: 60%;
+  padding-bottom: 35px;
+}
+/* ----------- PAGE INTROS ---------- */
+#aboutIntro,
+#portIntro {
+  height: 450px;
+  overflow: hidden;
+}
+#aboutIntro h3,
+#portIntro h3 {
+  color: #fff;
+  padding-top: 5%;
+  font-size: 60px;
+  font-weight: 300;
+}
+#aboutIntro p,
+#portIntro p {
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  padding-bottom: 5%;
+}
+/* ----------- ABOUT PAGE ---------- */
+#aboutIntro {
+  background: url('../images/Background_2.jpg');
+}
+#about {
+  height: 290px;
+}
+#about p {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 10%;
+}
+#ourTeam {
+  height: 600px;
+  background-color: #f6f6f6;
+}
+#ourTeam ul {
+  display: inline;
+  float: left;
+  width: 24.140893470790378%;
+  margin: 0 0.429553264604811%;
+}
+#ourTeam ul li {
+  padding-bottom: 10px;
+}
+#ourTeam ul img {
+  width: 85%;
+  border-radius: 50%;
+}
+#ourTeam p {
+  padding: 10px;
+}
+#mission {
+  height: 400px;
+}
+#mission ul {
+  display: inline;
+  float: left;
+  width: 49.140893470790374%;
+  margin: 0 0.429553264604811%;
+}
+#mission ul img {
+  padding-top: 10%;
+}
+#mission ul h2 {
+  margin-bottom: 20px;
+}
+/* ----------- PORTFOLIO PAGE ---------- */
+#portIntro {
+  background: url('../images/Background_3.jpg');
+}
+#Portfolio {
+  width: 100%;
+  margin: 0 auto;
+  height: 300px;
+}
+#Portfolio nav {
+  width: 100%;
+}
+#Portfolio p {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 3%;
+}
+#Projects nav {
+  margin: 0;
+}
+#Projects nav ul li {
+  display: inline-block;
+  padding: 5px 10px;
+}
+#Projects nav ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #000;
+}
+#Projects nav ul li a.activate {
+  background-color: #eaeaea;
+  padding: 5px 10px;
+  border: 1px solid #cac6c6;
+}
+#Projects {
+  width: 100%;
+  margin: 0 auto;
+  height: 800px;
+}
+#Projects .gridSystem {
+  z-index: 0;
+}
+#Projects .gridSystem li {
+  display: inline;
+  float: left;
+  width: 24.140893470790378%;
+  margin: 0 0.429553264604811%;
+  padding: 5px;
+}
+#Projects .gridSystem li a {
+  display: block;
+  z-index: 0;
+}
+#Projects .gridSystem li a img {
+  margin: 0 auto;
+  width: 100%;
+  z-index: 0;
+}
+#Projects .gridSystem li:hover {
+  background-image: url("../images/Icon.png");
+  background-size: cover;
+  background-position: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+/* ----------- FOOTER ---------- */
+footer {
+  margin: 0 auto;
+  height: 55px;
+  clear: both;
+  background-color: #4646b4;
+}
+footer p {
+  color: #fff;
+  padding: 20px;
+}
+@media (max-width: 940px) {
+  .container {
+    width: 940px;
+  }
+  #mainNav {
+    padding-left: 35%;
+    padding-top: 5px;
+  }
+  #mainNav ul li {
+    padding: 2px 5px;
+  }
+  #mission {
+    width: 100%;
+  }
+  #mission ul {
+    margin: 0 auto;
+    width: 100%;
+    display: inline;
+    float: left;
+    width: 49.140893470790374%;
+    margin: 0 0.429553264604811%;
+  }
+  #mission ul img {
+    width: 98%;
+    padding-top: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 767px;
+  }
+  #UIBrush .gridSystem ul {
+    display: inline;
+    float: left;
+    width: 49.140893470790374%;
+    margin: 0 0.429553264604811%;
+  }
+  #recents .gridSystem ul {
+    display: inline;
+    float: left;
+    width: 49.140893470790374%;
+    margin: 0 0.429553264604811%;
+  }
+  #about {
+    height: 350px;
+  }
+  #ourTeam {
+    height: 1150px;
+  }
+  #ourTeam ul {
+    display: inline;
+    float: left;
+    width: 49.140893470790374%;
+    margin: 0 0.429553264604811%;
+  }
+  #mission ul {
+    display: inline;
+    float: left;
+    width: 99.14089347079039%;
+    margin: 0 0.429553264604811%;
+  }
+  #mission ul img {
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 35px 20px 10px;
+  }
+  #Projects {
+    height: 800px;
+  }
+  #Projects .gridSystem li {
+    display: inline;
+    float: left;
+    width: 49.140893470790374%;
+    margin: 0 0.429553264604811%;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
+  #mainNav {
+    padding: 5px;
+  }
+  #mainNav ul {
+    float: left;
+    padding: 0;
+    width: 100%;
+  }
+  #mainNav li a {
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+  }
+  #UIBrush .breaker {
+    height: 50px;
+  }
+  #UIBrush .breaker p {
+    font-size: 12px;
+  }
+  #UIBrush .breaker p span {
+    font-size: 16px;
+  }
+  #UIBrush .gridSystem ul {
+    display: inline;
+    float: left;
+    width: 99.14089347079039%;
+    margin: 0 0.429553264604811%;
+  }
+  #UIBrush .gridSystem ul li {
+    width: 90%;
+  }
+  #recents .gridSystem ul {
+    display: inline;
+    float: left;
+    width: 99.14089347079039%;
+    margin: 0 0.429553264604811%;
+    margin: 10px;
+  }
+  #about {
+    height: 450px;
+  }
+  #ourTeam {
+    height: 1250px;
+  }
+  #ourTeam ul {
+    display: inline;
+    float: left;
+    width: 99.14089347079039%;
+    margin: 0 0.429553264604811%;
+  }
+  #ourTeam ul img {
+    width: 50%;
+    padding-bottom: 10%;
+  }
+  #mission ul {
+    display: inline;
+    float: left;
+    width: 99.14089347079039%;
+    margin: 0 0.429553264604811%;
+  }
+  #Portfolio {
+    height: 450px;
+  }
+  #Projects nav {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #Projects {
+    height: 800px;
+  }
+  #Projects .gridSystem li {
+    display: inline;
+    float: left;
+    width: 99.14089347079039%;
+    margin: 0 0.429553264604811%;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
